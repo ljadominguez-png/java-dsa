@@ -3,12 +3,12 @@ public class merge_two_arrays {
         //list1 = 1->2->3
         ListNode list1 = new ListNode(1);
         list1.next = new ListNode(2);
-        list1.next = new ListNode(3);
+        list1.next.next = new ListNode(3);
 
         //List2 = 1->3->4
         ListNode list2 = new ListNode(1);
         list2.next = new ListNode(3);
-        list2.next = new ListNode(4);
+        list2.next.next = new ListNode(4);
 
         //create obj
         merge_two_arrays solution =  new merge_two_arrays();
