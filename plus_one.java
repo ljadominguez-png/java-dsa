@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class plus_one {
 
     public static void main(String[] args) {
-        int[] arr1 = new int[]{1, 2, 3};
+        int[] arr1 = new int[]{1, 2, 9};
         int[] arr2 = new int[]{4, 3, 2, 1};
-        int[] arr3 = new int[]{9};
+        int[] arr3 = new int[]{1,9,9,9,9};
         plus_one solution = new plus_one();
         System.out.println("result 1" + Arrays.toString(solution.plusOne(arr1)));
 
