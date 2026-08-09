@@ -23,7 +23,9 @@ public class climbing_stairs {
          int[] ways = new int[n+1];
         // in fibonacci sequence it always starts with 1,1,2,3,5,8...
          ways[0] = ways[1] = 1; 
-         for(int index = 0; index <= n; index++){
+         //why 2? because of this ways[index-1] + ways[index-2] 
+         // index cannot be negative it will throw an out of bound
+         for(int index = 2; index <= n; index++){
             ways[index] = ways[index-1] + ways[index-2];//previous step + previous previous step
          }
         return ways[n];
