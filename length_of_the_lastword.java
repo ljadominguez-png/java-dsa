@@ -7,6 +7,7 @@ public class length_of_the_lastword {
         String words = in.nextLine();
         length_of_the_lastword myclass = new length_of_the_lastword();
         System.out.println(myclass.fastSolution(words));
+        in.close();
     }
     //O(n)
     public int lengthOfLastWord (String s){
