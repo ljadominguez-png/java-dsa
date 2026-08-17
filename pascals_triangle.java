@@ -23,7 +23,7 @@ public class pascals_triangle {
     public List<List<Integer>> generate(int numRows) {
         // Todo: Init Triangle List
         List<List<Integer>> Triangle = new ArrayList<>();
-
+        
         // Todo 2 : for the rows
         for (int row = 0; row < numRows; row++) {
             // Todo 3 : holder for the list inside the rows
