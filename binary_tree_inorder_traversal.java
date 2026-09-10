@@ -15,6 +15,8 @@ public class binary_tree_inorder_traversal {
         binary_tree_inorder_traversal solution = new binary_tree_inorder_traversal();
         List<Integer> result = solution.inorderTraversal(root);
         System.err.println("Inorder Traversal: " + result);
+        List<Integer> result2 = solution.postorderTraversal(root);
+        System.err.println("Postorder Traversal: " + result2);
     }
 
     List<Integer> inorderTraversal(TreeNode root) {
@@ -33,6 +35,20 @@ public class binary_tree_inorder_traversal {
         return res;
     }
 
+    List<Integer> postorderTraversal(TreeNode root){
+        ArrayList<Integer> res = new ArrayList<>();
+        if(root == null){
+            return res;
+        }
+        // Traverse the left subtree first
+        res.addAll(postorderTraversal(root.left));
+        // Traveres the Right subtree
+        res.addAll(postorderTraversal(root.right));
+        // Visit the current node
+        res.add(root.val);
+        return res;
+    }
+    
     static class TreeNode {
 
         int val;
